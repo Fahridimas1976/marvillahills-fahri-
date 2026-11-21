@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARVILLA HILLS — Penjualan &amp; Kepemilikan Unit Villa Eksklusif | Pakem, Sleman</title>
+
+    <!-- Google Fonts: Cormorant Garamond, Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F4F1EA',
+                        forest: '#153B24',
+                        forestDark: '#0E2918',
+                        gold: '#B9964E',
+                        goldHover: '#A3813E',
+                        cardBorder: '#E5DFD3',
+                    },
+                    fontFamily: {
+                        display: ['"Cormorant Garamond"', '"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        };
+    </script>
+
+    <style>
+        body {
+            background-color: #F4F1EA;
+            color: #153B24;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .font-heading {
+            font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+        }
+
+        .marvilla-card-shadow {
+            box-shadow: 0 12px 32px -6px rgba(21, 59, 36, 0.08), 0 4px 12px -2px rgba(21, 59, 36, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-cream text-forest antialiased selection:bg-forest selection:text-white">
+
+    <!-- ==================== 1. STICKY TOP NAVBAR ==================== -->
+    <header class="sticky top-0 z-40 w-full bg-forest text-white shadow-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-3">
+            <!-- Brand Logo & Identity Left -->
+            <a href="#" class="flex items-center gap-3 group min-w-0">
+                <img src="assets/logo-marvilla.png"
+                     alt="Logo Marvilla Hills"
+                     onerror="this.style.display='none'; document.getElementById('navLogoFallback').classList.remove('hidden');"
+                     class="h-9 sm:h-11 w-auto object-contain shrink-0" />
+                <div id="navLogoFallback" class="hidden w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gold/15 border border-gold/50 flex items-center justify-center shrink-0">
+                    <span class="font-heading font-bold text-gold text-base sm:text-lg">MH</span>
+                </div>
+                <div class="flex flex-col truncate">
+                    <span class="font-heading font-bold tracking-[0.14em] text-base sm:text-xl text-white leading-none uppercase group-hover:text-gold transition-colors truncate">
+                        MARVILLA HILLS
+                    </span>
+                    <span class="text-[9px] sm:text-[10px] tracking-[0.22em] text-gold uppercase font-semibold mt-1 truncate">
+                        VILLA • TOURISM • SPA
+                    </span>
+                </div>
+            </a>
+
+            <!-- Navigation Links & Gold PESAN UNIT CTA Right -->
+            <div class="flex items-center gap-3 sm:gap-5 lg:gap-7 shrink-0">
+                <a href="index.html"
+                   class="text-xs font-semibold text-white/85 hover:text-gold transition-colors flex items-center gap-1">
+                    <span>←</span>
+                    <span class="hidden sm:inline">Koleksi Utama</span>
+                    <span class="sm:hidden">Koleksi</span>
+                </a>
+                <nav class="hidden lg:flex items-center gap-6 text-xs font-semibold tracking-wide text-white/85">
+                    <a href="#tipe-villa" class="hover:text-gold transition-colors">Tipe Villa</a>
+                    <a href="#galeri" class="hover:text-gold transition-colors">Galeri</a>
+                    <a href="#fasilitas" class="hover:text-gold transition-colors">Fasilitas</a>
+                    <a href="#lokasi" class="hover:text-gold transition-colors">Lokasi</a>
+                </nav>
+                <a href="#pesan-unit"
+                   class="shrink-0 bg-gold hover:bg-goldHover text-forestDark font-extrabold text-xs sm:text-sm px-4 sm:px-6 py-2.5 rounded-full tracking-wider uppercase shadow-sm hover:shadow transition-all active:scale-95">
+                    PESAN UNIT
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-8 pb-16 space-y-16 sm:space-y-20">
+
+        <!-- ==================== 2. HERO BANNER & QUICK ANCHOR PILLS ==================== -->
+        <section id="hero" class="space-y-5">
+            <div class="relative w-full min-h-[540px] sm:min-h-[610px] rounded-3xl overflow-hidden shadow-xl bg-forest flex flex-col justify-between p-6 sm:p-10 md:p-14">
+                <!-- Local Hero Background Image with Graceful Fallback -->
+                <img src="asset/1795154955718-91c76140-642d-4533-809c-d7f89a906ba5_18.jpg"
+                     alt="Marvilla Hills — Kepemilikan Unit Villa Pakem Sleman Yogyakarta"
+                     onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1600 950%22%3E%3Cdefs%3E%3ClinearGradient id=%22mhBg%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23153B24%22/%3E%3Cstop offset=%22100%25%22 stop-color=%22%230B2114%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%221600%22 height=%22950%22 fill=%22url(%23mhBg)%22/%3E%3Ccircle cx=%221260%22 cy=%22220%22 r=%22280%22 fill=%22%23B9964E%22 fill-opacity=%220.11%22/%3E%3Cpath d=%22M0 760 Q 450 640 900 740 T 1600 680 L 1600 950 L 0 950 Z%22 fill=%22%230E2918%22/%3E%3C/svg%3E';"
+                     class="absolute inset-0 w-full h-full object-cover object-center scale-105 brightness-90" />
+
+                <!-- Deep Forest Botanical Gradient Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-[#0E2918]/95 via-[#153B24]/75 to-[#153B24]/45"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-[#0E2918]/90"></div>
+
+                <!-- Center Gold Emblem & Brand Identity -->
+                <div class="relative z-10 flex flex-col items-center text-center pt-4 sm:pt-8 my-auto">
+                    <div class="mb-3 flex flex-col items-center">
+                        <svg class="w-16 h-16 sm:w-20 sm:h-20 drop-shadow-md" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="mhGoldGrad" x1="15" y1="10" x2="85" y2="90" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#EAD29B"/>
+                                    <stop offset="50%" stop-color="#B9964E"/>
+                                    <stop offset="100%" stop-color="#8C6B2C"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- 5 Crown Stars -->
+                            <circle cx="34" cy="18" r="1.8" fill="url(#mhGoldGrad)"/>
+                            <circle cx="42" cy="14" r="2" fill="url(#mhGoldGrad)"/>
+                            <circle cx="50" cy="12" r="2.4" fill="url(#mhGoldGrad)"/>
+                            <circle cx="58" cy="14" r="2" fill="url(#mhGoldGrad)"/>
+                            <circle cx="66" cy="18" r="1.8" fill="url(#mhGoldGrad)"/>
+                            <!-- Architectural Monogram MH -->
+                            <path d="M24 72V34L38 46V72H24Z" fill="url(#mhGoldGrad)"/>
+                            <path d="M76 72V34L62 46V72H76Z" fill="url(#mhGoldGrad)"/>
+                            <path d="M50 22L64 36V76L50 86L36 76V36L50 22Z" stroke="url(#mhGoldGrad)" stroke-width="3.2"/>
+                            <path d="M43 54H57V78H43V54Z" fill="url(#mhGoldGrad)"/>
+                        </svg>
+                    </div>
+
+                    <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl tracking-[0.16em] text-white font-bold uppercase">
+                        MARVILLA HILLS
+                    </h2>
+                    <p class="font-heading italic text-xs sm:text-sm md:text-base tracking-[0.18em] text-gold mt-1.5 uppercase font-semibold">
+                        “REVITALIZE YOUR SPIRIT — VILLA, TOURISM AND SPA”
+                    </p>
+                </div>
+
+                <!-- Bottom-Left Typography & Gold CTA -->
+                <div class="relative z-10 max-w-2xl pt-8 sm:pt-10">
+                    <div class="mb-3">
+                        <p class="text-[10px] sm:text-xs font-bold tracking-[0.24em] text-gold uppercase">
+                            UNIT DIJUAL • SIGNATURE | PREMIUM | LUXURY | GLAMPING | ILAND VILLA
+                        </p>
+                    </div>
+
+                    <h1 class="font-heading text-3xl sm:text-5xl md:text-[54px] font-bold text-white leading-[1.1] tracking-tight">
+                        Investasi &amp; Kepemilikan Villa Eksklusif
+                    </h1>
+                    <p class="text-white/90 text-sm sm:text-base mt-3 leading-relaxed">
+                        Miliki aset properti vila modern tropis dalam kawasan wisata terpadu di Pakem, Sleman, Yogyakarta — legalitas jelas, potensi kenaikan nilai tinggi, dan manajemen kawasan profesional.
+                    </p>
+                    <div class="mt-6 flex flex-wrap items-center gap-3">
+                        <a href="#tipe-villa"
+                           class="inline-flex items-center justify-center bg-gold hover:bg-goldHover text-forestDark font-extrabold text-xs sm:text-sm px-7 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+                            Lihat Unit Villa
+                        </a>
+                        <a href="#pesan-unit"
+                           class="inline-flex items-center justify-center bg-white/15 hover:bg-white/25 text-white border border-white/35 font-bold text-xs sm:text-sm px-6 py-3.5 rounded-full backdrop-blur-xs transition-all">
+                            Konsultasi &amp; Pricelist
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Anchor Pill Navigation -->
+            <nav aria-label="Navigasi cepat" class="flex flex-wrap items-center gap-2.5 sm:gap-3 pt-1">
+                <a href="#tipe-villa" class="bg-white hover:bg-forest text-forest hover:text-white border border-cardBorder text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-full shadow-xs transition-all">
+                    Tipe Villa
+                </a>
+                <a href="#galeri" class="bg-white hover:bg-forest text-forest hover:text-white border border-cardBorder text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-full shadow-xs transition-all">
+                    Galeri
+                </a>
+                <a href="#fasilitas" class="bg-white hover:bg-forest text-forest hover:text-white border border-cardBorder text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-full shadow-xs transition-all">
+                    Fasilitas
+                </a>
+                <a href="#lokasi" class="bg-white hover:bg-forest text-forest hover:text-white border border-cardBorder text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-full shadow-xs transition-all">
+                    Lokasi
+                </a>
+                <a href="#pesan-unit" class="bg-white hover:bg-forest text-forest hover:text-white border border-cardBorder text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-full shadow-xs transition-all">
+                    Pesan Unit
+                </a>
+            </nav>
+        </section>
+
+        <!-- ==================== SECTION 1: PILIHAN UNIT VILLA DIJUAL ==================== -->
+        <section id="tipe-villa" class="scroll-mt-24 space-y-6">
+            <div>
+                <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-forest">
+                    Pilihan Unit Villa Dijual
+                </h2>
+                <p class="text-forest/75 text-sm sm:text-base mt-1.5">
+                    Pilih tipe unit kepemilikan sesuai target investasi dan kebutuhan keluarga Anda. Klik <strong>Detail &amp; Simulasi KPR</strong> untuk spesifikasi bangunan serta perhitungan DP dan cicilan bulanan.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- 1. Signature -->
+                <article class="bg-white rounded-3xl overflow-hidden marvilla-card-shadow border border-cardBorder flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300">
+                    <div>
+                        <div class="relative h-52 sm:h-48 overflow-hidden bg-[#EAE5D9]">
+                            <img src="asset/Tipe signature.jpg"
+                                 alt="Marvilla Hills Tipe Signature — Type 30 LT 33 m²"
+                                 onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect width=%22800%22 height=%22600%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2245%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3ESignature%3C/text%3E%3Ctext x=%2250%25%22 y=%2256%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23F4F1EA%22 font-family=%22sans-serif%22 font-size=%2220%22%3EType 30 %7C LT 33 m%C2%B2%3C/text%3E%3C/svg%3E';"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                            <span class="absolute top-3 right-3 bg-forest/95 text-gold text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">
+                                Best Seller
+                            </span>
+                            <span class="absolute bottom-3 left-3.5 text-white text-xs font-medium tracking-wide drop-shadow">
+                                Fasad Depan
+                            </span>
+                        </div>
+
+                        <div class="p-5 sm:p-6">
+                            <h3 class="text-lg font-bold text-forest">Signature</h3>
+
+                            <div class="mt-2.5 bg-cream border border-gold/40 rounded-2xl px-3.5 py-2.5">
+                                <span class="block text-[10px] uppercase tracking-wider text-forest/65 font-semibold">Harga Beli Unit</span>
+                                <span class="font-heading text-xl sm:text-2xl font-bold text-forest">Rp 214.000.000</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3">
+                                <span class="bg-[#ECE7DC] text-forest text-[11px] font-semibold px-2.5 py-1 rounded-full">Type 30</span>
+                                <span class="bg-[#ECE7DC] text-forest text-[11px] font-semibold px-2.5 py-1 rounded-full">LT 33 m²</span>
+                            </div>
+
+                            <p class="text-forest/75 text-xs mt-3 leading-relaxed">
+                                Villa compact dengan desain modern tropis, ruang kamar utama, bathroom, mini pantry, dan teras depan.
+                            </p>
+
+                            <ul class="text-forest/80 text-xs space-y-1.5 mt-3 border-t border-cardBorder pt-3">
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>
+                                    <span>1 Kamar Tidur &amp; 1 Bathroom</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>
+                                    <span>Mini Pantry &amp; Teras Tropis</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="px-5 sm:px-6 pb-6 pt-1 flex flex-col gap-2">
+                        <button type="button"
+                                onclick="openVillaDetail('signature')"
+                                class="w-full bg-cream hover:bg-[#EAE5D9] text-forest border border-cardBorder text-xs font-bold px-4 py-2.5 rounded-full transition-all cursor-pointer">
+                            Detail &amp; Simulasi KPR
+                        </button>
+                        <button type="button"
+                                onclick="selectUnitType('Signature (Type 30 | LT 33 m²) — Rp 214.000.000')"
+                                class="w-full bg-forest hover:bg-forestDark text-white text-xs font-bold px-5 py-3 rounded-full shadow-sm hover:shadow transition-all cursor-pointer active:scale-95">
+                            Pilih Unit
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 2. Premium -->
+                <article class="bg-white rounded-3xl overflow-hidden marvilla-card-shadow border border-cardBorder flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300">
+                    <div>
+                        <div class="relative h-52 sm:h-48 overflow-hidden bg-[#EAE5D9]">
+                            <img src="asset/Tipe premium.jpg"
+                                 alt="Marvilla Hills Tipe Premium — Type 45,5 LT 45,5 m²"
+                                 onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect width=%22800%22 height=%22600%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2245%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3EPremium%3C/text%3E%3Ctext x=%2250%25%22 y=%2256%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23F4F1EA%22 font-family=%22sans-serif%22 font-size=%2220%22%3EType 45,5 %7C LT 45,5 m%C2%B2%3C/text%3E%3C/svg%3E';"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                            <span class="absolute top-3 right-3 bg-gold text-forestDark text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">
+                                Private Pool
+                            </span>
+                            <span class="absolute bottom-3 left-3.5 text-white text-xs font-medium tracking-wide drop-shadow">
+                                Fasad Depan
+                            </span>
+                        </div>
+
+                        <div class="p-5 sm:p-6">
+                            <h3 class="text-lg font-bold text-forest">Premium</h3>
+
+                            <div class="mt-2.5 bg-cream border border-gold/40 rounded-2xl px-3.5 py-2.5">
+                                <span class="block text-[10px] uppercase tracking-wider text-forest/65 font-semibold">Harga Beli Unit</span>
+                                <span class="font-heading text-xl sm:text-2xl font-bold text-forest">Rp 344.000.000</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3">
+                                <span class="bg-[#ECE7DC] text-forest text-[11px] font-semibold px-2.5 py-1 rounded-full">Type 45,5</span>
+                                <span class="bg-[#ECE7DC] text-forest text-[11px] font-semibold px-2.5 py-1 rounded-full">LT 45,5 m²</span>
+                            </div>
+
+                            <p class="text-forest/75 text-xs mt-3 leading-relaxed">
+                                Villa eksklusif dilengkapi private pool, area kamar luas, mini pantry, dan desain interior bernuansa resort.
+                            </p>
+
+                            <ul class="text-forest/80 text-xs space-y-1.5 mt-3 border-t border-cardBorder pt-3">
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>
+                                    <span>Private Pool &amp; Sun Deck</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>
+                                    <span>1 Bedroom + Living &amp; Mini Pantry</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="px-5 sm:px-6 pb-6 pt-1 flex flex-col gap-2">
+                        <button type="button"
+                                onclick="openVillaDetail('premium')"
+                                class="w-full bg-cream hover:bg-[#EAE5D9] text-forest border border-cardBorder text-xs font-bold px-4 py-2.5 rounded-full transition-all cursor-pointer">
+                            Detail &amp; Simulasi KPR
+                        </button>
+                        <button type="button"
+                                onclick="selectUnitType('Premium (Type 45,5 | LT 45,5 m²) — Rp 344.000.000')"
+                                class="w-full bg-forest hover:bg-forestDark text-white text-xs font-bold px-5 py-3 rounded-full shadow-sm hover:shadow transition-all cursor-pointer active:scale-95">
+                            Pilih Unit
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 3. Luxury -->
+                <article class="bg-white rounded-3xl overflow-hidden marvilla-card-shadow border border-cardBorder flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300">
+                    <div>
+                        <div class="relative h-52 sm:h-48 overflow-hidden bg-[#EAE5D9]">
+                            <img src="asset/Tipe luxury.jpg"
+                                 alt="Marvilla Hills Tipe Luxury — Type 93 LT 59,5 m² 2 Lantai"
+                                 onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect width=%22800%22 height=%22600%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2245%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3ELuxury%3C/text%3E%3Ctext x=%2250%25%22 y=%2256%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23F4F1EA%22 font-family=%22sans-serif%22 font-size=%2220%22%3EType 93 %7C LT 59,5 m%C2%B2 %E2%80%A2 2 Lantai%3C/text%3E%3C/svg%3E';"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                            <span class="absolute top-3 right-3 bg-forest text-gold text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">
+                                2 Lantai • Pool
+                            </span>
+                            <span class="absolute bottom-3 left-3.5 text-white text-xs font-medium tracking-wide drop-shadow">
+                                Private Pool
+                            </span>
+                        </div>
+
+                        <div class="p-5 sm:p-6">
+                            <h3 class="text-lg font-bold text-forest">Luxury</h3>
+
+                            <div class="mt-2.5 bg-cream border border-gold/40 rounded-2xl px-3.5 py-2.5">
+                                <span class="block text-[10px] uppercase tracking-wider text-forest/65 font-semibold">Harga Beli Unit</span>
+                                <span class="font-heading text-xl sm:text-2xl font-bold text-forest">Rp 574.000.000</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3">
+                                <span class="bg-[#ECE7DC] text-forest text-[11px] font-semibold px-2.5 py-1 rounded-full">Type 93</span>
+                                <span class="bg-[#ECE7DC] text-forest text-[11px] font-semibold px-2.5 py-1 rounded-full">LT 59,5 m² • 2 Lantai</span>
+                            </div>
+
+                            <p class="text-forest/75 text-xs mt-3 leading-relaxed">
+                                Konsep dua lantai dengan private pool, interior premium, kamar bawah &amp; atas serta bathroom modern.
+                            </p>
+
+                            <ul class="text-forest/80 text-xs space-y-1.5 mt-3 border-t border-cardBorder pt-3">
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>
+                                    <span>2 Lantai • Kamar Bawah &amp; Atas</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>
+                                    <span>Private Pool &amp; Balkon Lantai 2</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="px-5 sm:px-6 pb-6 pt-1 flex flex-col gap-2">
+                        <button type="button"
+                                onclick="openVillaDetail('luxury')"
+                                class="w-full bg-cream hover:bg-[#EAE5D9] text-forest border border-cardBorder text-xs font-bold px-4 py-2.5 rounded-full transition-all cursor-pointer">
+                            Detail &amp; Simulasi KPR
+                        </button>
+                        <button type="button"
+                                onclick="selectUnitType('Luxury (Type 93 | LT 59,5 m² - 2 Lantai) — Rp 574.000.000')"
+                                class="w-full bg-forest hover:bg-forestDark text-white text-xs font-bold px-5 py-3 rounded-full shadow-sm hover:shadow transition-all cursor-pointer active:scale-95">
+                            Pilih Unit
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 4. Glamping -->
+                <article class="bg-white rounded-3xl overflow-hidden marvilla-card-shadow border border-cardBorder flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300">
+                    <div>
+                        <div class="relative h-52 sm:h-48 overflow-hidden bg-[#EAE5D9]">
+                            <img src="asset/Tipe glamping.jpg"
+                                 alt="Marvilla Hills Tipe Glamping — Type 21 LB 21 LT 21 m²"
+                                 onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect width=%22800%22 height=%22600%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2245%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3EGlamping%3C/text%3E%3Ctext x=%2250%25%22 y=%2256%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23F4F1EA%22 font-family=%22sans-serif%22 font-size=%2220%22%3EType 21 %7C LB 21 %E2%80%A2 LT 21 m%C2%B2%3C/text%3E%3C/svg%3E';"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                            <span class="absolute top-3 right-3 bg-gold text-forestDark text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">
+                                Entry Investment
+                            </span>
+                            <span class="absolute bottom-3 left-3.5 text-white text-xs font-medium tracking-wide drop-shadow">
+                                TYPE GLAMPING
+                            </span>
+                        </div>
+
+                        <div class="p-5 sm:p-6">
+                            <h3 class="text-lg font-bold text-forest">Glamping</h3>
+
+                            <div class="mt-2.5 bg-cream border border-gold/40 rounded-2xl px-3.5 py-2.5">
+                                <span class="block text-[10px] uppercase tracking-wider text-forest/65 font-semibold">Harga Beli Unit</span>
+                                <span class="font-heading text-xl sm:text-2xl font-bold text-forest">Rp 134.000.000</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3">
+                                <span class="bg-[#ECE7DC] text-forest text-[11px] font-semibold px-2.5 py-1 rounded-full">Type 21</span>
+                                <span class="bg-[#ECE7DC] text-forest text-[11px] font-semibold px-2.5 py-1 rounded-full">LB 21 • LT 21 m²</span>
+                            </div>
+
+                            <p class="text-forest/75 text-xs mt-3 leading-relaxed">
+                                Konsep unit glamping kayu modern bernuansa alam tropis dengan teras dek kayu dan suasana resort eksklusif.
+                            </p>
+
+                            <ul class="text-forest/80 text-xs space-y-1.5 mt-3 border-t border-cardBorder pt-3">
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>
+                                    <span>Kamar Tidur &amp; En-suite Bathroom</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>
+                                    <span>Dek Kayu Tropis &amp; Taman Hijau</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="px-5 sm:px-6 pb-6 pt-1 flex flex-col gap-2">
+                        <button type="button"
+                                onclick="openVillaDetail('glamping')"
+                                class="w-full bg-cream hover:bg-[#EAE5D9] text-forest border border-cardBorder text-xs font-bold px-4 py-2.5 rounded-full transition-all cursor-pointer">
+                            Detail &amp; Simulasi KPR
+                        </button>
+                        <button type="button"
+                                onclick="selectUnitType('Glamping (Type 21 | LB 21 • LT 21 m²) — Rp 134.000.000')"
+                                class="w-full bg-forest hover:bg-forestDark text-white text-xs font-bold px-5 py-3 rounded-full shadow-sm hover:shadow transition-all cursor-pointer active:scale-95">
+                            Pilih Unit
+                        </button>
+                    </div>
+                </article>
+
+                <!-- 5. Iland Villa (PK Island) -->
+                <article class="bg-white rounded-3xl overflow-hidden marvilla-card-shadow border border-cardBorder flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300">
+                    <div>
+                        <div class="relative h-52 sm:h-48 overflow-hidden bg-[#EAE5D9]">
+                            <img src="asset/pk iland.jpg"
+                                 alt="Marvilla Hills Tipe Iland Villa — Type 24 LB 24 LT 27 m²"
+                                 onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect width=%22800%22 height=%22600%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2245%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3EIland Villa%3C/text%3E%3Ctext x=%2250%25%22 y=%2256%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23F4F1EA%22 font-family=%22sans-serif%22 font-size=%2220%22%3EType 24 %7C LB 24 %E2%80%A2 LT 27 m%C2%B2%3C/text%3E%3C/svg%3E';"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                            <span class="absolute top-3 right-3 bg-gold text-forestDark text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full">
+                                New Concept
+                            </span>
+                            <span class="absolute bottom-3 left-3.5 text-white text-xs font-medium tracking-wide drop-shadow">
+                                TYPE ILAND
+                            </span>
+                        </div>
+
+                        <div class="p-5 sm:p-6">
+                            <h3 class="text-lg font-bold text-forest">Iland Villa</h3>
+
+                            <div class="mt-2.5 bg-cream border border-gold/40 rounded-2xl px-3.5 py-2.5">
+                                <span class="block text-[10px] uppercase tracking-wider text-forest/65 font-semibold">Harga Beli Unit</span>
+                                <span class="font-heading text-xl sm:text-2xl font-bold text-forest">Rp 198.000.000</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-1.5 mt-3">
+                                <span class="bg-[#ECE7DC] text-forest text-[11px] font-semibold px-2.5 py-1 rounded-full">Type 24</span>
+                                <span class="bg-[#ECE7DC] text-forest text-[11px] font-semibold px-2.5 py-1 rounded-full">LB 24 • LT 27 m²</span>
+                            </div>
+
+                            <p class="text-forest/75 text-xs mt-3 leading-relaxed">
+                                Konsep vila tropis modern dengan nuansa pulau privat, teras santai menghadap taman air, dan pencahayaan alami.
+                            </p>
+
+                            <ul class="text-forest/80 text-xs space-y-1.5 mt-3 border-t border-cardBorder pt-3">
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>
+                                    <span>1 Kamar Tidur &amp; En-suite Bathroom</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>
+                                    <span>Private Deck &amp; Taman Tropis</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="px-5 sm:px-6 pb-6 pt-1 flex flex-col gap-2">
+                        <button type="button"
+                                onclick="openVillaDetail('pk_island')"
+                                class="w-full bg-cream hover:bg-[#EAE5D9] text-forest border border-cardBorder text-xs font-bold px-4 py-2.5 rounded-full transition-all cursor-pointer">
+                            Detail &amp; Simulasi KPR
+                        </button>
+                        <button type="button"
+                                onclick="selectUnitType('Iland Villa (Type 24 | LB 24 • LT 27 m²) — Rp 198.000.000')"
+                                class="w-full bg-forest hover:bg-forestDark text-white text-xs font-bold px-5 py-3 rounded-full shadow-sm hover:shadow transition-all cursor-pointer active:scale-95">
+                            Pilih Unit
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==================== SECTION 2: GALERI & KONSEP (4-PHOTO GRID + LIGHTBOX) ==================== -->
+        <section id="galeri" class="scroll-mt-24 space-y-6">
+            <div>
+                <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-forest">
+                    Galeri &amp; Konsep
+                </h2>
+                <p class="text-forest/75 text-sm mt-1">
+                    Klik foto untuk melihat detail fasad bangunan, tata kawasan, dan arsitektur unit vila dalam layar penuh.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <!-- Galeri 1 -->
+                <div onclick="openLightbox(0)"
+                     class="relative h-64 sm:h-72 rounded-2xl overflow-hidden marvilla-card-shadow border border-cardBorder cursor-pointer group bg-[#EAE5D9]">
+                    <img src="asset/fasad luxury.jpg"
+                         alt="Desain Fasad Depan Unit Luxury 2 Lantai Marvilla Hills"
+                         onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1000 700%22%3E%3Crect width=%221000%22 height=%22700%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3EGaleri 1 %E2%80%A2 Fasad Depan Luxury%3C/text%3E%3C/svg%3E';"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/25 group-hover:bg-black/15 transition-colors"></div>
+                    <span class="absolute top-4 right-5 text-white font-medium text-base sm:text-lg tracking-wide drop-shadow">
+                        Fasad Depan
+                    </span>
+                </div>
+
+                <!-- Galeri 2 -->
+                <div onclick="openLightbox(1)"
+                     class="relative h-64 sm:h-72 rounded-2xl overflow-hidden marvilla-card-shadow border border-cardBorder cursor-pointer group bg-[#EAE5D9]">
+                    <img src="asset/fasad premium.jpg"
+                         alt="Fasad Villa Tipe Premium Marvilla Hills"
+                         onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1000 700%22%3E%3Crect width=%221000%22 height=%22700%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3EGaleri 2 %E2%80%A2 Fasad Villa Premium%3C/text%3E%3C/svg%3E';"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/15 transition-colors"></div>
+                    <span class="absolute bottom-4 left-5 text-white font-medium text-sm sm:text-base tracking-wide drop-shadow">
+                        Fasad Villa Premium
+                    </span>
+                </div>
+
+                <!-- Galeri 3 -->
+                <div onclick="openLightbox(2)"
+                     class="relative h-64 sm:h-72 rounded-2xl overflow-hidden marvilla-card-shadow border border-cardBorder cursor-pointer group bg-[#EAE5D9]">
+                    <img src="asset/fasad signature.jpg"
+                         alt="Fasad Villa Tipe Signature Marvilla Hills"
+                         onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1000 700%22%3E%3Crect width=%221000%22 height=%22700%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3EGaleri 3 %E2%80%A2 Fasad Villa Signature%3C/text%3E%3C/svg%3E';"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/15 transition-colors"></div>
+                    <span class="absolute bottom-4 left-5 text-white font-medium text-sm sm:text-base tracking-wide drop-shadow">
+                        Fasad Villa Signature
+                    </span>
+                </div>
+
+                <!-- Galeri 4 -->
+                <div onclick="openLightbox(3)"
+                     class="relative h-64 sm:h-72 rounded-2xl overflow-hidden marvilla-card-shadow border border-cardBorder cursor-pointer group bg-[#EAE5D9]">
+                    <img src="asset/fasad glamping.jpg"
+                         alt="Deretan Unit Glamping Eksklusif Marvilla Hills"
+                         onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1000 700%22%3E%3Crect width=%221000%22 height=%22700%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3EGaleri 4 %E2%80%A2 Kawasan Unit Glamping%3C/text%3E%3C/svg%3E';"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/15 transition-colors"></div>
+                    <span class="absolute bottom-4 left-5 text-white font-medium text-sm sm:text-base tracking-wide drop-shadow">
+                        Kawasan Unit Glamping
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECTION 3: FASILITAS KAWASAN (8-CARD GRID) ==================== -->
+        <section id="fasilitas" class="scroll-mt-24 space-y-6">
+            <div>
+                <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-forest">
+                    Fasilitas Kawasan
+                </h2>
+                <p class="text-forest/75 text-sm sm:text-base mt-1.5">
+                    Nilai tambah investasi properti Anda didukung oleh ekosistem wisata dan gaya hidup terintegrasi di dalam kawasan Marvilla Hills.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <!-- 1. Beach Club -->
+                <div class="bg-white rounded-2xl overflow-hidden marvilla-card-shadow border border-cardBorder group hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative h-40 overflow-hidden bg-[#EAE5D9]">
+                        <img src="asset/beach club.jpg"
+                             alt="Beach Club Marvilla Hills"
+                             onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 700 450%22%3E%3Crect width=%22700%22 height=%22450%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2226%22 font-weight=%22bold%22%3EBeach Club%3C/text%3E%3C/svg%3E';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <span class="absolute bottom-2.5 left-2.5 bg-white/95 text-forest text-[10px] font-semibold px-2.5 py-0.5 rounded shadow-xs">
+                            Beach Club
+                        </span>
+                    </div>
+                    <div class="p-4 sm:p-5">
+                        <h3 class="font-bold text-forest text-base">Beach Club</h3>
+                        <p class="text-forest/75 text-xs mt-1 leading-relaxed">
+                            Kolam, area lounge dan suasana resort
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. Snow Experience -->
+                <div class="bg-white rounded-2xl overflow-hidden marvilla-card-shadow border border-cardBorder group hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative h-40 overflow-hidden bg-[#EAE5D9]">
+                        <img src="asset/snow experience.jpg"
+                             alt="Snow Experience Marvilla Hills"
+                             onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 700 450%22%3E%3Crect width=%22700%22 height=%22450%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2226%22 font-weight=%22bold%22%3ESnow Experience%3C/text%3E%3C/svg%3E';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <span class="absolute bottom-2.5 left-2.5 bg-white/95 text-forest text-[10px] font-semibold px-2.5 py-0.5 rounded shadow-xs">
+                            Snow Experience
+                        </span>
+                    </div>
+                    <div class="p-4 sm:p-5">
+                        <h3 class="font-bold text-forest text-base">Snow Experience</h3>
+                        <p class="text-forest/75 text-xs mt-1 leading-relaxed">
+                            Atraksi pengalaman salju
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3. Lobby Utama -->
+                <div class="bg-white rounded-2xl overflow-hidden marvilla-card-shadow border border-cardBorder group hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative h-40 overflow-hidden bg-[#EAE5D9]">
+                        <img src="asset/lobby utama.jpg"
+                             alt="Lobby Utama Marvilla Hills"
+                             onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 700 450%22%3E%3Crect width=%22700%22 height=%22450%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2226%22 font-weight=%22bold%22%3ELobby Utama%3C/text%3E%3C/svg%3E';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <span class="absolute bottom-2.5 left-2.5 bg-white/95 text-forest text-[10px] font-semibold px-2.5 py-0.5 rounded shadow-xs">
+                            Lobby Utama
+                        </span>
+                    </div>
+                    <div class="p-4 sm:p-5">
+                        <h3 class="font-bold text-forest text-base">Lobby Utama</h3>
+                        <p class="text-forest/75 text-xs mt-1 leading-relaxed">
+                            Area penerima tamu
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 4. Wedding Venue -->
+                <div class="bg-white rounded-2xl overflow-hidden marvilla-card-shadow border border-cardBorder group hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative h-40 overflow-hidden bg-[#EAE5D9]">
+                        <img src="asset/weeding .jpg"
+                             alt="Wedding Venue Marvilla Hills"
+                             onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 700 450%22%3E%3Crect width=%22700%22 height=%22450%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2226%22 font-weight=%22bold%22%3EWedding Venue%3C/text%3E%3C/svg%3E';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <span class="absolute bottom-2.5 left-2.5 bg-white/95 text-forest text-[10px] font-semibold px-2.5 py-0.5 rounded shadow-xs">
+                            Wedding Venue
+                        </span>
+                    </div>
+                    <div class="p-4 sm:p-5">
+                        <h3 class="font-bold text-forest text-base">Wedding Venue</h3>
+                        <p class="text-forest/75 text-xs mt-1 leading-relaxed">
+                            Area outdoor wedding
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 5. Spa -->
+                <div class="bg-white rounded-2xl overflow-hidden marvilla-card-shadow border border-cardBorder group hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative h-40 overflow-hidden bg-[#EAE5D9]">
+                        <img src="asset/spa.jpg"
+                             alt="Spa Marvilla Hills"
+                             onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 700 450%22%3E%3Crect width=%22700%22 height=%22450%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2226%22 font-weight=%22bold%22%3ESpa%3C/text%3E%3C/svg%3E';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <span class="absolute bottom-2.5 left-2.5 bg-white/95 text-forest text-[10px] font-semibold px-2.5 py-0.5 rounded shadow-xs">
+                            SPA
+                        </span>
+                    </div>
+                    <div class="p-4 sm:p-5">
+                        <h3 class="font-bold text-forest text-base">Spa</h3>
+                        <p class="text-forest/75 text-xs mt-1 leading-relaxed">
+                            Fasilitas spa dan relaksasi
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 6. Playground -->
+                <div class="bg-white rounded-2xl overflow-hidden marvilla-card-shadow border border-cardBorder group hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative h-40 overflow-hidden bg-[#EAE5D9]">
+                        <img src="asset/playground.jpg"
+                             alt="Playground Marvilla Hills"
+                             onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 700 450%22%3E%3Crect width=%22700%22 height=%22450%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2226%22 font-weight=%22bold%22%3EPlayground%3C/text%3E%3C/svg%3E';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <span class="absolute bottom-2.5 left-2.5 bg-white/95 text-forest text-[10px] font-semibold px-2.5 py-0.5 rounded shadow-xs">
+                            Playground
+                        </span>
+                    </div>
+                    <div class="p-4 sm:p-5">
+                        <h3 class="font-bold text-forest text-base">Playground</h3>
+                        <p class="text-forest/75 text-xs mt-1 leading-relaxed">
+                            Area bermain keluarga
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 7. Palm Padel Club -->
+                <div class="bg-white rounded-2xl overflow-hidden marvilla-card-shadow border border-cardBorder group hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative h-40 overflow-hidden bg-[#EAE5D9]">
+                        <img src="asset/padel.jpg"
+                             alt="Palm Padel Club Marvilla Hills"
+                             onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 700 450%22%3E%3Crect width=%22700%22 height=%22450%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2226%22 font-weight=%22bold%22%3EPalm Padel Club%3C/text%3E%3C/svg%3E';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <span class="absolute bottom-2.5 left-2.5 bg-white/95 text-forest text-[10px] font-semibold px-2.5 py-0.5 rounded shadow-xs">
+                            PALM PADEL CLUB
+                        </span>
+                    </div>
+                    <div class="p-4 sm:p-5">
+                        <h3 class="font-bold text-forest text-base">Palm Padel Club</h3>
+                        <p class="text-forest/75 text-xs mt-1 leading-relaxed">
+                            Fasilitas olahraga padel
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 8. Co-working Space -->
+                <div class="bg-white rounded-2xl overflow-hidden marvilla-card-shadow border border-cardBorder group hover:-translate-y-1 transition-all duration-300">
+                    <div class="relative h-40 overflow-hidden bg-[#EAE5D9]">
+                        <img src="asset/co working.jpg"
+                             alt="Co-working Space Marvilla Hills"
+                             onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 700 450%22%3E%3Crect width=%22700%22 height=%22450%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2226%22 font-weight=%22bold%22%3ECo-working Space%3C/text%3E%3C/svg%3E';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <span class="absolute bottom-2.5 left-2.5 bg-white/95 text-forest text-[10px] font-semibold px-2.5 py-0.5 rounded shadow-xs">
+                            Co-working space
+                        </span>
+                    </div>
+                    <div class="p-4 sm:p-5">
+                        <h3 class="font-bold text-forest text-base">Co-working Space</h3>
+                        <p class="text-forest/75 text-xs mt-1 leading-relaxed">
+                            Ruang kerja dan aktivitas komunitas
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECTION 4: LOKASI & AKSES (CLICKABLE GMAPS) ==================== -->
+        <section id="lokasi" class="scroll-mt-24 space-y-6">
+            <div>
+                <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-forest">
+                    Lokasi &amp; Akses
+                </h2>
+            </div>
+
+            <div class="bg-white rounded-3xl overflow-hidden marvilla-card-shadow border border-cardBorder">
+                <div class="grid grid-cols-1 lg:grid-cols-12 bg-[#ECEAE3]">
+                    <!-- Clickable Map Image Wrapped in Google Maps Anchor -->
+                    <a href="https://maps.app.goo.gl/CVr5HUKrWMUVnY3f8"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       title="Klik Peta untuk Buka Google Maps"
+                       class="lg:col-span-5 relative min-h-[240px] sm:min-h-[270px] overflow-hidden flex items-center justify-center bg-[#DCE3DA] group cursor-pointer">
+                        <img src="assets/lokasi-map.jpg"
+                             alt="Peta Lokasi Marvilla Hills Pakem Sleman Yogyakarta"
+                             onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 520%22%3E%3Crect width=%22800%22 height=%22520%22 fill=%22%23DCE3DA%22/%3E%3Cpath d=%22M0 150 L800 310 M260 0 L410 520 M560 0 L490 520%22 stroke=%22%23FFFFFF%22 stroke-width=%2216%22/%3E%3Ccircle cx=%22410%22 cy=%22245%22 r=%2224%22 fill=%22%23153B24%22/%3E%3Ccircle cx=%22410%22 cy=%22245%22 r=%229%22 fill=%22%23B9964E%22/%3E%3Ctext x=%22410%22 y=%22305%22 text-anchor=%22middle%22 fill=%22%23153B24%22 font-family=%22sans-serif%22 font-size=%2220%22 font-weight=%22bold%22%3EMarvilla Hills %E2%80%A2 Pakem, Sleman%3C/text%3E%3C/svg%3E';"
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-forest/15 group-hover:bg-forest/30 transition-colors"></div>
+                        <span class="absolute bottom-3.5 left-3.5 right-3.5 sm:right-auto inline-flex items-center justify-center gap-1.5 bg-forest/95 group-hover:bg-gold text-white group-hover:text-forestDark text-xs font-bold px-4 py-2 rounded-full shadow-lg transition-all">
+                            Klik Peta untuk Buka Google Maps ↗
+                        </span>
+                    </a>
+
+                    <!-- Address & Access Highlights -->
+                    <div class="lg:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col justify-center space-y-6 bg-gradient-to-r from-[#ECE8DF] to-[#F4F1EA]">
+                        <div class="flex items-start gap-4">
+                            <div class="shrink-0 mt-0.5 text-red-600">
+                                <svg class="w-8 h-8 sm:w-9 sm:h-9" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-forest text-sm sm:text-base">Alamat Project:</h3>
+                                <p class="text-forest/80 text-xs sm:text-sm leading-relaxed mt-1">
+                                    Jl. Watugendong, Cemoroharjo, Candibinangun,<br class="hidden sm:inline">
+                                    Kec. Pakem, Kabupaten Sleman,<br class="hidden sm:inline">
+                                    Daerah Istimewa Yogyakarta 55582
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="shrink-0 mt-0.5 text-red-600">
+                                <svg class="w-8 h-8 sm:w-9 sm:h-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-forest text-sm sm:text-base">Akses Lokasi:</h3>
+                                <ul class="text-forest/80 text-xs sm:text-sm space-y-1 mt-1">
+                                    <li>• 6 Menit ke Wisata Kaliurang / Wisata Merapi</li>
+                                    <li>• 6 Menit ke Wisata Kuliner Kopi Klotok</li>
+                                    <li>• 6 Menit ke Kampus UII Terpadu</li>
+                                    <li>• 20 Menit ke Kota Yogyakarta</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="text-forest/75 text-xs sm:text-sm leading-relaxed">
+                            Berada di koridor wisata utama Pakem – Kaliurang dengan akses sekitar 6–15 menit menuju destinasi wisata alam, kuliner ikonik, kampus, serta jalur utama menuju pusat kota Yogyakarta. <strong>Bila ingin cek lokasi, hubungi kami di bagian <a href="#pesan-unit" class="underline hover:text-goldHover">kontak</a>.</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="p-6 sm:p-8 space-y-3 bg-white">
+                    <p class="text-forest text-xs sm:text-sm">
+                        <strong class="font-bold">Alamat proyek:</strong> Jl. Watugendong, Cemoroharjo, Candibinangun, Kecamatan Pakem, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55582.
+                    </p>
+                    <p class="text-forest/75 text-xs sm:text-sm leading-relaxed">
+                        Berada di koridor wisata utama Pakem – Kaliurang dengan akses sekitar 6–15 menit menuju destinasi wisata alam, kuliner ikonik, kampus, serta jalur utama menuju pusat kota Yogyakarta.
+                    </p>
+                    <div class="pt-1">
+                        <a href="https://maps.app.goo.gl/CVr5HUKrWMUVnY3f8"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="inline-flex items-center gap-1 text-forest hover:text-goldHover font-bold text-xs sm:text-sm underline underline-offset-4 transition-colors">
+                            Buka lokasi di Google Maps ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECTION 5: FORM MINAT & PEMESANAN UNIT ==================== -->
+        <section id="pesan-unit" class="scroll-mt-24">
+            <div class="bg-forest text-white rounded-3xl p-6 sm:p-10 md:p-12 shadow-xl">
+                <div class="max-w-4xl">
+                    <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+                        Form Minat &amp; Pemesanan Unit
+                    </h2>
+                    <p class="text-white/85 text-xs sm:text-sm mt-2">
+                        Isi data singkat untuk mendapatkan pricelist lengkap, ketersediaan blok/unit, maupun jadwal survey lokasi. <strong>Bila ingin cek lokasi, hubungi kami di bagian kontak.</strong> Pesan akan langsung dikirim melalui WhatsApp Marketing Marvilla Hills.
+                    </p>
+                </div>
+
+                <div id="formNotice" class="hidden mt-5 p-3.5 rounded-xl text-xs sm:text-sm border"></div>
+
+                <form id="purchaseForm" onsubmit="handlePurchaseSubmit(event)" novalidate class="mt-6 space-y-4 sm:space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="buyerName" class="block text-xs font-medium text-white/90 mb-1.5">
+                                Nama Calon Pembeli <span class="text-gold">*</span>
+                            </label>
+                            <input type="text"
+                                   id="buyerName"
+                                   name="buyerName"
+                                   placeholder="Nama lengkap"
+                                   required
+                                   class="w-full bg-white text-forest placeholder-gray-400 text-sm rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-gold transition-all" />
+                        </div>
+
+                        <div>
+                            <label for="buyerWhatsapp" class="block text-xs font-medium text-white/90 mb-1.5">
+                                Nomor WhatsApp Anda <span class="text-gold">*</span>
+                            </label>
+                            <input type="tel"
+                                   id="buyerWhatsapp"
+                                   name="buyerWhatsapp"
+                                   placeholder="08xxxxxxxxxx"
+                                   required
+                                   class="w-full bg-white text-forest placeholder-gray-400 text-sm rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-gold transition-all" />
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="unitType" class="block text-xs font-medium text-white/90 mb-1.5">
+                                Pilihan Tipe Unit Villa <span class="text-gold">*</span>
+                            </label>
+                            <div class="relative">
+                                <select id="unitType"
+                                        name="unitType"
+                                        required
+                                        class="w-full appearance-none bg-white text-forest text-sm rounded-xl px-4 py-3.5 pr-10 focus:outline-none focus:ring-2 focus:ring-gold transition-all cursor-pointer">
+                                    <option value="">Pilih tipe unit villa</option>
+                                    <option value="Signature (Type 30 | LT 33 m²) — Rp 214.000.000">Signature (Type 30 | LT 33 m²) — Rp 214.000.000</option>
+                                    <option value="Premium (Type 45,5 | LT 45,5 m²) — Rp 344.000.000">Premium (Type 45,5 | LT 45,5 m²) — Rp 344.000.000</option>
+                                    <option value="Luxury (Type 93 | LT 59,5 m² - 2 Lantai) — Rp 574.000.000">Luxury (Type 93 | LT 59,5 m² - 2 Lantai) — Rp 574.000.000</option>
+                                    <option value="Glamping (Type 21 | LB 21 • LT 21 m²) — Rp 134.000.000">Glamping (Type 21 | LB 21 • LT 21 m²) — Rp 134.000.000</option>
+                                    <option value="Iland Villa (Type 24 | LB 24 • LT 27 m²) — Rp 198.000.000">Iland Villa (Type 24 | LB 24 • LT 27 m²) — Rp 198.000.000</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-forest">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="blockUnit" class="block text-xs font-medium text-white/90 mb-1.5">
+                                Blok / Unit Diminati (jika ada)
+                            </label>
+                            <input type="text"
+                                   id="blockUnit"
+                                   name="blockUnit"
+                                   placeholder="Contoh: Blok A-05 / Dekat Beach Club"
+                                   class="w-full bg-white text-forest placeholder-gray-400 text-sm rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-gold transition-all" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="paymentPlan" class="block text-xs font-medium text-white/90 mb-1.5">
+                            Rencana Pembayaran
+                        </label>
+                        <div class="relative">
+                            <select id="paymentPlan"
+                                    name="paymentPlan"
+                                    class="w-full appearance-none bg-white text-forest text-sm rounded-xl px-4 py-3.5 pr-10 focus:outline-none focus:ring-2 focus:ring-gold transition-all cursor-pointer">
+                                <option value="Cash">Cash</option>
+                                <option value="DP 50%">DP 50%</option>
+                                <option value="Booking 5 Juta">Booking 5 Juta</option>
+                                <option value="Belum Menentukan">Belum Menentukan</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-forest">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="notes" class="block text-xs font-medium text-white/90 mb-1.5">
+                            Catatan / Pertanyaan
+                        </label>
+                        <textarea id="notes"
+                                  name="notes"
+                                  rows="3"
+                                  placeholder="Saya ingin info siteplan terbaru, ketersediaan blok, legalitas SHM/PBG, dan jadwal survey lokasi."
+                                  class="w-full bg-white text-forest placeholder-gray-400 text-sm rounded-xl px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-gold transition-all"></textarea>
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="submit"
+                                class="w-full bg-gold hover:bg-goldHover text-forestDark font-extrabold text-xs sm:text-sm tracking-wider uppercase py-4 px-6 rounded-full shadow-lg hover:shadow-xl transition-all cursor-pointer active:scale-[0.99]">
+                            KIRIM PEMESANAN UNIT VIA WHATSAPP
+                        </button>
+                    </div>
+
+                    <p class="text-white/80 text-xs pt-1">
+                        WhatsApp Marketing Marvilla Hills: <span class="font-semibold text-gold">+62 882-0057-94774 (FAHRI)</span>
+                    </p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== CLEAN FOOTER ==================== -->
+    <footer class="border-t border-cardBorder bg-[#EAE5D9] text-forest">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div>
+                <p class="font-heading font-bold tracking-wider text-sm uppercase">MARVILLA HILLS</p>
+                <p class="text-xs text-forest/75 mt-0.5">Villa, Tourism &amp; Spa — Jl. Watugendong, Pakem, Sleman, Yogyakarta</p>
+            </div>
+            <div class="text-xs text-forest/75">
+                &copy; 2026 Marvilla Hills Yogyakarta. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== INTERACTIVE MODAL DETAIL & SIMULASI KPR ==================== -->
+    <div id="villaDetailModal"
+         onclick="closeVillaDetail()"
+         class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6">
+        <div class="relative max-w-2xl w-full bg-white rounded-3xl overflow-hidden shadow-2xl max-h-[90vh] flex flex-col" onclick="event.stopPropagation()">
+            <div class="relative h-56 sm:h-64 bg-[#EAE5D9] shrink-0">
+                <img id="detailImg" src="" alt="Detail Unit Villa" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+                <button type="button"
+                        onclick="closeVillaDetail()"
+                        aria-label="Tutup detail"
+                        class="absolute top-4 right-4 bg-black/60 hover:bg-black text-white w-9 h-9 rounded-full flex items-center justify-center transition-colors cursor-pointer">
+                    ✕
+                </button>
+                <div class="absolute bottom-4 left-6 right-6 flex flex-wrap items-end justify-between gap-2">
+                    <div>
+                        <span id="detailBadge" class="inline-block bg-gold text-forestDark text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full mb-1.5"></span>
+                        <h3 id="detailTitle" class="font-heading text-2xl sm:text-3xl font-bold text-white"></h3>
+                    </div>
+                    <div class="text-left sm:text-right">
+                        <span class="text-[11px] text-white/80 block">Harga Jual Resmi</span>
+                        <p id="detailPrice" class="text-xl sm:text-2xl font-extrabold text-gold"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-6 sm:p-7 overflow-y-auto space-y-5">
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="bg-cream p-3 rounded-2xl text-center border border-cardBorder">
+                        <span class="text-[11px] text-forest/65 block">Tipe Bangunan</span>
+                        <strong id="detailType" class="text-xs sm:text-sm font-bold text-forest"></strong>
+                    </div>
+                    <div class="bg-cream p-3 rounded-2xl text-center border border-cardBorder">
+                        <span class="text-[11px] text-forest/65 block">Luas Tanah</span>
+                        <strong id="detailLand" class="text-xs sm:text-sm font-bold text-forest"></strong>
+                    </div>
+                    <div class="bg-cream p-3 rounded-2xl text-center border border-cardBorder">
+                        <span class="text-[11px] text-forest/65 block">Konfigurasi</span>
+                        <strong id="detailConfig" class="text-xs sm:text-sm font-bold text-forest"></strong>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-forest mb-1.5">Deskripsi &amp; Konsep Bangunan</h4>
+                    <p id="detailDesc" class="text-forest/80 text-xs sm:text-sm leading-relaxed"></p>
+                </div>
+
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-forest mb-2">Spesifikasi &amp; Kelengkapan Unit</h4>
+                    <ul id="detailFeatures" class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-forest/85"></ul>
+                </div>
+
+                <!-- Interactive KPR & Cash Purchase Simulator -->
+                <div class="bg-cream border border-cardBorder rounded-2xl p-4 space-y-3.5">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-forest">Simulasi Pembelian (KPR &amp; Cash)</h4>
+                        <div class="flex items-center gap-1.5">
+                            <button type="button"
+                                    id="dp20Btn"
+                                    onclick="setDpPercent(20)"
+                                    class="px-3 py-1 rounded-full text-xs font-bold bg-forest text-white cursor-pointer">
+                                DP 20%
+                            </button>
+                            <button type="button"
+                                    id="dp30Btn"
+                                    onclick="setDpPercent(30)"
+                                    class="px-3 py-1 rounded-full text-xs font-bold bg-white text-forest border border-cardBorder cursor-pointer">
+                                DP 30%
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-3">
+                        <label for="tenorRange" class="text-xs font-semibold text-forest/85">
+                            Tenor Angsuran: <strong id="tenorText" class="text-forest">10 Tahun</strong>
+                        </label>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[11px] text-forest/65">5 Th</span>
+                            <input type="range"
+                                   id="tenorRange"
+                                   min="5"
+                                   max="15"
+                                   step="5"
+                                   value="10"
+                                   oninput="recalculateMortgage()"
+                                   class="w-32 sm:w-40 accent-[#B9964E] cursor-pointer" />
+                            <span class="text-[11px] text-forest/65">15 Th</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs">
+                        <div class="bg-white p-3 rounded-xl border border-cardBorder">
+                            <span id="simDpLabel" class="text-forest/65 block text-[11px]">Uang Muka (DP 20%)</span>
+                            <strong id="simDpValue" class="text-forest text-sm font-bold"></strong>
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-gold/50">
+                            <span class="text-goldHover font-semibold block text-[11px]">Estimasi Cicilan / Bln</span>
+                            <strong id="simMonthlyValue" class="text-forest text-sm font-bold"></strong>
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-cardBorder">
+                            <span class="text-forest/65 block text-[11px]">Harga Cash Resmi</span>
+                            <strong id="simCashValue" class="text-emerald-800 text-sm font-bold"></strong>
+                        </div>
+                    </div>
+                    <p class="text-[11px] text-forest/65">
+                        *Simulasi indikatif asumsi margin 7,5% p.a. dan harga jual resmi unit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="px-6 py-4 bg-cream border-t border-cardBorder flex items-center justify-end gap-3 shrink-0">
+                <button type="button"
+                        onclick="closeVillaDetail()"
+                        class="px-5 py-2.5 rounded-full text-xs font-semibold text-forest/75 hover:bg-black/5 transition-colors cursor-pointer">
+                    Tutup
+                </button>
+                <button type="button"
+                        id="detailReserveBtn"
+                        class="bg-forest hover:bg-forestDark text-white text-xs font-bold px-6 py-3 rounded-full shadow-sm transition-all cursor-pointer">
+                    Pesan Unit Ini
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== LIGHTBOX MODAL GALERI ==================== -->
+    <div id="lightboxModal"
+         onclick="closeLightbox()"
+         class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6">
+        <div class="relative max-w-4xl w-full bg-white rounded-2xl overflow-hidden shadow-2xl" onclick="event.stopPropagation()">
+            <button type="button"
+                    onclick="closeLightbox()"
+                    aria-label="Tutup galeri"
+                    class="absolute top-3 right-3 z-10 bg-black/65 hover:bg-black text-white w-9 h-9 rounded-full flex items-center justify-center transition-colors cursor-pointer">
+                ✕
+            </button>
+
+            <button type="button"
+                    onclick="navigateLightbox(-1)"
+                    aria-label="Foto sebelumnya"
+                    class="absolute left-3 top-1/2 -translate-y-1/2 z-10 bg-black/60 hover:bg-black text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors cursor-pointer">
+                ‹
+            </button>
+
+            <button type="button"
+                    onclick="navigateLightbox(1)"
+                    aria-label="Foto berikutnya"
+                    class="absolute right-3 top-1/2 -translate-y-1/2 z-10 bg-black/60 hover:bg-black text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors cursor-pointer">
+                ›
+            </button>
+
+            <img id="lightboxImg" src="" alt="Preview Galeri Marvilla Hills" class="w-full max-h-[75vh] object-cover" />
+            <div class="p-4 bg-white flex items-center justify-between gap-3">
+                <p id="lightboxCaption" class="text-sm font-semibold text-forest"></p>
+                <span id="lightboxCounter" class="text-xs text-forest/65 shrink-0"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        const WHATSAPP_TARGET_NUMBER = '62882005794774';
+
+        let activeUnitPrice = 214000000;
+        let activeDpPercent = 20;
+        let currentLightboxIndex = 0;
+
+        const galleryItems = [
+            {
+                src: 'asset/fasad luxury.jpg',
+                fallback: 'data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1000 700%22%3E%3Crect width=%221000%22 height=%22700%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3EGaleri 1 %E2%80%A2 Fasad Depan Luxury%3C/text%3E%3C/svg%3E',
+                caption: 'Fasad Depan — Desain Arsitektur Tropis Modern Tipe Luxury 2 Lantai'
+            },
+            {
+                src: 'asset/fasad premium.jpg',
+                fallback: 'data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1000 700%22%3E%3Crect width=%221000%22 height=%22700%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3EGaleri 2 %E2%80%A2 Fasad Villa Premium%3C/text%3E%3C/svg%3E',
+                caption: 'Fasad Villa Premium — Sentuhan Batu Alam & Lengkungan Estetik Resort'
+            },
+            {
+                src: 'asset/fasad signature.jpg',
+                fallback: 'data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1000 700%22%3E%3Crect width=%221000%22 height=%22700%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3EGaleri 3 %E2%80%A2 Fasad Villa Signature%3C/text%3E%3C/svg%3E',
+                caption: 'Fasad Villa Signature — Tata Ruang Compact dengan Taman Tropis Privat'
+            },
+            {
+                src: 'asset/fasad glamping.jpg',
+                fallback: 'data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1000 700%22%3E%3Crect width=%221000%22 height=%22700%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3EGaleri 4 %E2%80%A2 Kawasan Unit Glamping%3C/text%3E%3C/svg%3E',
+                caption: 'Kawasan Unit Glamping — Deretan Kabin Kayu Estetik Bernuansa Pegunungan'
+            }
+        ];
+
+        const villaCatalog = {
+            signature: {
+                title: 'Signature',
+                badge: 'Best Seller • Modern Tropis',
+                priceText: 'Rp 214.000.000',
+                priceNumber: 214000000,
+                selectValue: 'Signature (Type 30 | LT 33 m²) — Rp 214.000.000',
+                type: 'Type 30 (LB 30 m²)',
+                land: 'LT 33 m²',
+                config: '1 Lantai • 1 KT',
+                image: 'asset/Tipe signature.jpg',
+                fallbackImage: 'data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect width=%22800%22 height=%22600%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2245%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3ESignature%3C/text%3E%3C/svg%3E',
+                desc: 'Unit kepemilikan paling diminati dengan tata ruang efisien berkonsep modern tropis. Dilengkapi kamar tidur utama, kamar mandi berstandar resort, mini pantry, serta teras taman depan.',
+                features: [
+                    '1 Kamar Tidur Utama',
+                    '1 Kamar Mandi Modern',
+                    'Mini Pantry & Meja Saji',
+                    'Teras Depan & Taman Tropis',
+                    'Instalasi Listrik & Air Bersih',
+                    'Akses Penuh Fasilitas Kawasan'
+                ]
+            },
+            premium: {
+                title: 'Premium',
+                badge: 'Dilengkapi Private Pool',
+                priceText: 'Rp 344.000.000',
+                priceNumber: 344000000,
+                selectValue: 'Premium (Type 45,5 | LT 45,5 m²) — Rp 344.000.000',
+                type: 'Type 45,5',
+                land: 'LT 45,5 m²',
+                config: '1 Lantai + Pool',
+                image: 'asset/Tipe premium.jpg',
+                fallbackImage: 'data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect width=%22800%22 height=%22600%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2245%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3EPremium%3C/text%3E%3C/svg%3E',
+                desc: 'Hunian vila privat bernuansa resort yang dilengkapi kolam renang pribadi (private pool) di dalam kavling, area kamar tidur luas, lounge santai, dan mini pantry modern.',
+                features: [
+                    'Private Pool di Dalam Unit',
+                    '1 Kamar Tidur & Living Area',
+                    '1 Bathroom & Sun Deck',
+                    'Mini Pantry & Dining Corner',
+                    'Fasad Batu Alam & Arches',
+                    'Potensi Passive Income Tinggi'
+                ]
+            },
+            luxury: {
+                title: 'Luxury',
+                badge: '2 Lantai • Private Pool',
+                priceText: 'Rp 574.000.000',
+                priceNumber: 574000000,
+                selectValue: 'Luxury (Type 93 | LT 59,5 m² - 2 Lantai) — Rp 574.000.000',
+                type: 'Type 93 (2 Lantai)',
+                land: 'LT 59,5 m²',
+                config: '2 Lantai • 2 KT',
+                image: 'asset/Tipe luxury.jpg',
+                fallbackImage: 'data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect width=%22800%22 height=%22600%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2245%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3ELuxury%3C/text%3E%3C/svg%3E',
+                desc: 'Tipe flagship berlantai dua dengan ruang keluarga lapang, kamar tidur lantai bawah dan lantai atas, balkoni pemandangan kawasan, serta private pool eksklusif.',
+                features: [
+                    'Bangunan 2 Lantai (LB 93 m²)',
+                    'Kamar Tidur Lantai Bawah & Atas',
+                    'Private Pool & Teras Santai',
+                    'Balkon Lantai 2 View Kawasan',
+                    'Ruang Keluarga & Pantry Luas',
+                    '2 Bathroom Finishing Premium'
+                ]
+            },
+            glamping: {
+                title: 'Glamping',
+                badge: 'Entry Investment • Alam Tropis',
+                priceText: 'Rp 134.000.000',
+                priceNumber: 134000000,
+                selectValue: 'Glamping (Type 21 | LB 21 • LT 21 m²) — Rp 134.000.000',
+                type: 'Type 21 (LB 21 m²)',
+                land: 'LT 21 m²',
+                config: 'Kabin Resort • 1 KT',
+                image: 'asset/Tipe glamping.jpg',
+                fallbackImage: 'data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect width=%22800%22 height=%22600%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2245%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3EGlamping%3C/text%3E%3C/svg%3E',
+                desc: 'Pilihan investasi properti resort paling terjangkau dengan konsep kabin kayu modern beratap tinggi, dek santai menghadap jalur hijau, serta kamar mandi dalam.',
+                features: [
+                    'Kabin A-Frame Kayu Modern',
+                    '1 Ruang Kamar & En-suite Bath',
+                    'Teras Dek Kayu Privat',
+                    'Jendela Kaca Lebar View Alam',
+                    'Modal Investasi Ringan',
+                    'Terintegrasi Fasilitas Wisata'
+                ]
+            },
+            pk_island: {
+                title: 'Iland Villa',
+                badge: 'New Concept • Tropical Island Vibe',
+                priceText: 'Rp 198.000.000',
+                priceNumber: 198000000,
+                selectValue: 'Iland Villa (Type 24 | LB 24 • LT 27 m²) — Rp 198.000.000',
+                type: 'Type 24 (LB 24 m²)',
+                land: 'LT 27 m²',
+                config: '1 Lantai • 1 KT',
+                image: 'asset/pk iland.jpg',
+                fallbackImage: 'data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect width=%22800%22 height=%22600%22 fill=%22%23153B24%22/%3E%3Ctext x=%2250%25%22 y=%2245%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23B9964E%22 font-family=%22Georgia,serif%22 font-size=%2236%22 font-weight=%22bold%22%3EIland Villa%3C/text%3E%3C/svg%3E',
+                desc: 'Konsep hunian vila kompak bernuansa pulau tropis privat dengan tata ruang modern, teras dek kayu santai, dan sirkulasi udara alami yang sejuk.',
+                features: [
+                    '1 Kamar Tidur Utama',
+                    '1 En-suite Bathroom Modern',
+                    'Private Timber Deck & Teras',
+                    'Jendela Kaca Pencahayaan Alami',
+                    'Instalasi Listrik & Air Bersih',
+                    'Akses Penuh Fasilitas Kawasan'
+                ]
+            }
+        };
+
+        function formatRupiah(amount) {
+            return 'Rp ' + Math.round(amount).toLocaleString('id-ID');
+        }
+
+        function setDpPercent(percent) {
+            activeDpPercent = percent;
+            const dp20 = document.getElementById('dp20Btn');
+            const dp30 = document.getElementById('dp30Btn');
+
+            if (percent === 20) {
+                dp20.className = 'px-3 py-1 rounded-full text-xs font-bold bg-forest text-white cursor-pointer';
+                dp30.className = 'px-3 py-1 rounded-full text-xs font-bold bg-white text-forest border border-cardBorder cursor-pointer';
+            } else {
+                dp30.className = 'px-3 py-1 rounded-full text-xs font-bold bg-forest text-white cursor-pointer';
+                dp20.className = 'px-3 py-1 rounded-full text-xs font-bold bg-white text-forest border border-cardBorder cursor-pointer';
+            }
+            recalculateMortgage();
+        }
+
+        function recalculateMortgage() {
+            const years = Number(document.getElementById('tenorRange').value);
+            document.getElementById('tenorText').textContent = `${years} Tahun`;
+            document.getElementById('simDpLabel').textContent = `Uang Muka (DP ${activeDpPercent}%)`;
+
+            const dpAmount = activeUnitPrice * (activeDpPercent / 100);
+            const principal = activeUnitPrice - dpAmount;
+            const annualRate = 0.075;
+            const monthlyRate = annualRate / 12;
+            const totalMonths = years * 12;
+
+            const monthlyPayment = (principal * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -totalMonths));
+
+            document.getElementById('simDpValue').textContent = formatRupiah(dpAmount);
+            document.getElementById('simMonthlyValue').textContent = formatRupiah(monthlyPayment) + '/bln';
+            document.getElementById('simCashValue').textContent = formatRupiah(activeUnitPrice);
+        }
+
+        function openVillaDetail(key) {
+            const data = villaCatalog[key];
+            if (!data) return;
+
+            const detailImg = document.getElementById('detailImg');
+            detailImg.onerror = function() {
+                this.onerror = null;
+                this.src = data.fallbackImage;
+            };
+            detailImg.src = data.image;
+
+            document.getElementById('detailBadge').textContent = data.badge;
+            document.getElementById('detailTitle').textContent = data.title;
+            document.getElementById('detailPrice').textContent = data.priceText;
+            document.getElementById('detailType').textContent = data.type;
+            document.getElementById('detailLand').textContent = data.land;
+            document.getElementById('detailConfig').textContent = data.config;
+            document.getElementById('detailDesc').textContent = data.desc;
+
+            const featuresEl = document.getElementById('detailFeatures');
+            featuresEl.innerHTML = data.features.map(item => `
+                <li class="flex items-center gap-2 bg-cream px-3 py-2 rounded-xl border border-cardBorder">
+                    <span class="w-2 h-2 rounded-full bg-gold shrink-0"></span>
+                    <span>${item}</span>
+                </li>
+            `).join('');
+
+            activeUnitPrice = data.priceNumber;
+            recalculateMortgage();
+
+            const reserveBtn = document.getElementById('detailReserveBtn');
+            reserveBtn.onclick = function() {
+                closeVillaDetail();
+                selectUnitType(data.selectValue);
+            };
+
+            document.getElementById('villaDetailModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeVillaDetail() {
+            document.getElementById('villaDetailModal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        function selectUnitType(unitValue) {
+            const unitEl = document.getElementById('unitType');
+            if (unitEl) {
+                unitEl.value = unitValue;
+                unitEl.classList.add('ring-2', 'ring-gold');
+                setTimeout(() => unitEl.classList.remove('ring-2', 'ring-gold'), 1400);
+            }
+
+            const formSection = document.getElementById('pesan-unit');
+            if (formSection) {
+                formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        function renderLightbox() {
+            const current = galleryItems[currentLightboxIndex];
+            const img = document.getElementById('lightboxImg');
+            const caption = document.getElementById('lightboxCaption');
+            const counter = document.getElementById('lightboxCounter');
+
+            img.onerror = function() {
+                this.onerror = null;
+                this.src = current.fallback;
+            };
+            img.src = current.src;
+            caption.textContent = current.caption;
+            counter.textContent = `${currentLightboxIndex + 1} / ${galleryItems.length}`;
+        }
+
+        function openLightbox(index) {
+            currentLightboxIndex = index;
+            renderLightbox();
+            document.getElementById('lightboxModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function navigateLightbox(step) {
+            currentLightboxIndex = (currentLightboxIndex + step + galleryItems.length) % galleryItems.length;
+            renderLightbox();
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightboxModal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        function showFormNotice(message, isError = true) {
+            const notice = document.getElementById('formNotice');
+            notice.textContent = message;
+            notice.className = isError
+                ? 'mt-5 p-3.5 rounded-xl bg-red-500/20 border border-red-300/40 text-red-100 text-xs sm:text-sm'
+                : 'mt-5 p-3.5 rounded-xl bg-gold/20 border border-gold/50 text-white text-xs sm:text-sm';
+            notice.classList.remove('hidden');
+        }
+
+        function handlePurchaseSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('buyerName').value.trim();
+            const whatsapp = document.getElementById('buyerWhatsapp').value.trim();
+            const unitType = document.getElementById('unitType').value.trim();
+            const blockUnit = document.getElementById('blockUnit').value.trim() || '-';
+            const paymentPlan = document.getElementById('paymentPlan').value.trim() || 'Belum Menentukan';
+            const notes = document.getElementById('notes').value.trim() || 'Mohon kirimkan pricelist terbaru, siteplan, dan ketersediaan unit.';
+
+            const digitsOnly = whatsapp.replace(/\D/g, '');
+            if (!name) {
+                showFormNotice('Mohon lengkapi nama calon pembeli terlebih dahulu.', true);
+                document.getElementById('buyerName').focus();
+                return;
+            }
+            if (digitsOnly.length < 9) {
+                showFormNotice('Mohon masukkan nomor WhatsApp yang valid.', true);
+                document.getElementById('buyerWhatsapp').focus();
+                return;
+            }
+            if (!unitType) {
+                showFormNotice('Mohon pilih tipe unit villa terlebih dahulu.', true);
+                document.getElementById('unitType').focus();
+                return;
+            }
+
+            const messageLines = [
+                'Halo Tim Marketing *Marvilla Hills* (+62 882-0057-94774 - FAHRI), saya berminat untuk pembelian unit villa berikut:',
+                '',
+                `• *Nama Calon Pembeli:* ${name}`,
+                `• *Nomor WhatsApp:* ${whatsapp}`,
+                `• *Pilihan Tipe Unit:* ${unitType}`,
+                `• *Blok / Unit Diminati:* ${blockUnit}`,
+                `• *Rencana Pembayaran:* ${paymentPlan}`,
+                `• *Catatan / Pertanyaan:* ${notes}`,
+                '',
+                'Mohon informasi ketersediaan unit, siteplan, dan rincian skema pembayarannya.'
+            ];
+
+            const encodedText = encodeURIComponent(messageLines.join('\n'));
+            const waUrl = `https://wa.me/${WHATSAPP_TARGET_NUMBER}?text=${encodedText}`;
+
+            showFormNotice('Data lengkap. Membuka WhatsApp Marketing Marvilla Hills (+62 882-0057-94774 - FAHRI)...', false);
+            window.open(waUrl, '_blank', 'noopener,noreferrer');
+        }
+
+        document.addEventListener('keydown', function(e) {
+            const lightboxOpen = !document.getElementById('lightboxModal').classList.contains('hidden');
+            if (e.key === 'Escape') {
+                closeLightbox();
+                closeVillaDetail();
+            } else if (lightboxOpen && e.key === 'ArrowRight') {
+                navigateLightbox(1);
+            } else if (lightboxOpen && e.key === 'ArrowLeft') {
+                navigateLightbox(-1);
+            }
+        });
+    </script>
+</body>
+</html>
